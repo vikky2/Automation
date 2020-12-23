@@ -6,7 +6,7 @@ Library  SeleniumLibrary
 RegTest
     open browser    http://demowebshop.tricentis.com/register       chrome
     maximize browser window
-    sleep   1
+    set selenium speed  1
 
     select radio button   Gender      M
 
