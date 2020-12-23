@@ -6,6 +6,9 @@ Library  SeleniumLibrary
 RegTest
     open browser    http://demowebshop.tricentis.com/register       chrome
     maximize browser window
+    ${time}=    get selenium timeout
+    log to console  ${time}
+
     set selenium timeout    10 seconds
     wait until page contains    Registration    #5 sec
 
