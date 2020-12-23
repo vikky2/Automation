@@ -9,6 +9,7 @@ HandlingAlerts
     #handle alert    accept
     #handle alert    dismiss
 
-    handle alert    leave
-    sleep   2
-    close all browsers
+    #handle alert    leave
+    #alert should be present     Press a button!
+
+    alert should not be present     Press a button!
