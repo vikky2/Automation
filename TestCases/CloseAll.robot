@@ -10,4 +10,5 @@ MyTestCases
     open browser    http://automationpractice.com/index.php    chrome
     maximize browser window
 
-    close browser
+    #close browser
+    close all browsers
