@@ -19,6 +19,7 @@ MultiBrowsersTest
     ${title2}=  get title
     log to console  ${title2}
 
+
     sleep   3
     close all browsers
 
