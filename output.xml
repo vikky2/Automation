@@ -1,47 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201224 02:13:33.985" rpa="false">
-<suite id="s1" name="Frames" source="C:\Users\vikky\PycharmProjects\Automation\TestCases\Frames.robot">
-<test id="s1-t1" name="Testing Frames">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201227 21:35:24.009" rpa="false">
+<suite id="s1" name="Alerts" source="C:\Users\vikky\PycharmProjects\Automation\TestCases\Alerts.robot">
+<test id="s1-t1" name="HandlingAlerts">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>https://seleniumhq.github.io/selenium/docs/api/java/index</arg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20201224 02:13:34.274" level="INFO">Opening browser 'chrome' to base url 'https://seleniumhq.github.io/selenium/docs/api/java/index'.</msg>
-<status status="PASS" starttime="20201224 02:13:34.274" endtime="20201224 02:13:41.104"></status>
+<msg timestamp="20201227 21:35:26.848" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<status status="PASS" starttime="20201227 21:35:26.848" endtime="20201227 21:35:45.365"></status>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20201224 02:13:41.104" endtime="20201224 02:13:43.271"></status>
-</kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>packageListFrame</arg>
+<arg>xpath://*[@id="HTML9"]/div[1]/button</arg>
 </arguments>
-<msg timestamp="20201224 02:13:43.271" level="INFO">Selecting frame 'packageListFrame'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20201224 02:13:44.468" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20201224 02:13:43.287" endtime="20201224 02:13:44.468"></status>
+<msg timestamp="20201227 21:35:45.365" level="INFO">Clicking element 'xpath://*[@id="HTML9"]/div[1]/button'.</msg>
+<status status="PASS" starttime="20201227 21:35:45.365" endtime="20201227 21:35:45.667"></status>
 </kw>
-<msg timestamp="20201224 02:13:44.468" level="FAIL">Element with locator 'packageListFrame' not found.</msg>
-<status status="FAIL" starttime="20201224 02:13:43.271" endtime="20201224 02:13:44.468"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20201227 21:35:48.676" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201227 21:35:45.667" endtime="20201227 21:35:48.676"></status>
 </kw>
-<status status="FAIL" starttime="20201224 02:13:34.274" endtime="20201224 02:13:44.468" critical="yes">Element with locator 'packageListFrame' not found.</status>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<arguments>
+<arg>Press a button!</arg>
+</arguments>
+<status status="PASS" starttime="20201227 21:35:48.676" endtime="20201227 21:35:48.676"></status>
+</kw>
+<status status="PASS" starttime="20201227 21:35:26.848" endtime="20201227 21:35:48.676" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20201224 02:13:33.985" endtime="20201224 02:13:44.468"></status>
+<status status="PASS" starttime="20201227 21:35:24.011" endtime="20201227 21:35:48.683"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Frames">Frames</stat>
+<stat pass="1" fail="0" id="s1" name="Alerts">Alerts</stat>
 </suite>
 </statistics>
 <errors>

@@ -10,6 +10,6 @@ HandlingAlerts
     #handle alert    dismiss
 
     #handle alert    leave
-    #alert should be present     Press a button!
+    alert should be present     Press a button!
 
-    alert should not be present     Press a button!
+#    alert should not be present     Press a button!
