@@ -10,7 +10,11 @@
 #    \   LOG TO CONSOLE  ${i}
 
 
-Forlopp3withList
-    @{items}    create list     1   2   3   4   5   #@{items} is the list variable
-    : FOR   ${i}    IN  @{items}
-    \   Log to console  ${i}                # ${i} is the index value
+#Forlopp3withList
+#    @{items}    create list     1   2   3   4   5   #@{items} is the list variable
+#    : FOR   ${i}    IN  @{items}
+#    \   Log to console  ${i}                # ${i} is the index value
+
+Forloop4
+    : FOR   ${i}  IN    john    david   smith   scott
+    \   Log to console  ${i}
