@@ -19,7 +19,12 @@
 #    : FOR   ${i}  IN    john    david   smith   scott
 #    \   Log to console  ${i}
 
-Forloop5
-    @{nameslist}    create list     john    david   smith   scott
-    : FOR   ${i}  IN    john    david   smith   scott
+#Forloop5
+#    @{nameslist}    create list     john    david   smith   scott
+#    : FOR   ${i}  IN    john    david   smith   scott
+#    \   Log to console  ${i}
+
+Forloop6withExit
+    @{items}    create list     1   2   3   4   5
+    : FOR   ${i}    IN  @{items}
     \   Log to console  ${i}
