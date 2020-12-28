@@ -15,6 +15,11 @@
 #    : FOR   ${i}    IN  @{items}
 #    \   Log to console  ${i}                # ${i} is the index value
 
-Forloop4
+#Forloop4
+#    : FOR   ${i}  IN    john    david   smith   scott
+#    \   Log to console  ${i}
+
+Forloop5
+    @{nameslist}    create list     john    david   smith   scott
     : FOR   ${i}  IN    john    david   smith   scott
     \   Log to console  ${i}
