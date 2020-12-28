@@ -16,4 +16,12 @@ TableOperations
 
     Table column should contain  xpath://table[@name='BookTable']   2   Author
     Table row should contain    xpath://table[@name='BookTable']    4   Learn   JS
+# above two statements are of the validations
+
+    table cell should contain   xpath://table[@name='BookTable']    5   2   Mukesh
+    table header should contain     xpath://table[@name='BookTable']    BookName
+
+    close browser
+
+
 
