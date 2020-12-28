@@ -10,3 +10,6 @@ TableOperations
 
     log to console  ${rows}
     log to console  ${cols}
+
+    ${data}=    get text    xpath://table[@name='BookTable']/tbody/tr[5]/td[1]
+    log to console  ${data}
