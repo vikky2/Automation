@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201228 20:37:48.930" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201228 20:41:45.473" rpa="false">
 <suite id="s1" name="ScrollingPage" source="C:\Users\vikky\PycharmProjects\Automation\TestCases\ScrollingPage.robot">
 <test id="s1-t1" name="ScrollingTest">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,38 +8,56 @@
 <arg>https://www.countries-ofthe-world.com/flags-of-the-world.html</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20201228 20:37:49.335" level="INFO">Opening browser 'chrome' to base url 'https://www.countries-ofthe-world.com/flags-of-the-world.html'.</msg>
-<status status="PASS" starttime="20201228 20:37:49.335" endtime="20201228 20:38:00.408"></status>
+<msg timestamp="20201228 20:41:45.779" level="INFO">Opening browser 'chrome' to base url 'https://www.countries-ofthe-world.com/flags-of-the-world.html'.</msg>
+<status status="PASS" starttime="20201228 20:41:45.779" endtime="20201228 20:42:07.395"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20201228 20:38:00.410" endtime="20201228 20:38:02.621"></status>
+<status status="PASS" starttime="20201228 20:42:07.396" endtime="20201228 20:42:09.651"></status>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <doc>Executes the given JavaScript code with possible arguments.</doc>
 <arguments>
 <arg>window.scrollTo(0,document.body.scrollHeight)</arg>
 </arguments>
-<msg timestamp="20201228 20:38:02.622" level="INFO">Executing JavaScript:
+<msg timestamp="20201228 20:42:09.653" level="INFO">Executing JavaScript:
 window.scrollTo(0,document.body.scrollHeight)
 Without any arguments.</msg>
-<status status="PASS" starttime="20201228 20:38:02.621" endtime="20201228 20:38:02.628"></status>
+<status status="PASS" starttime="20201228 20:42:09.652" endtime="20201228 20:42:09.679"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201228 20:38:04.642" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201228 20:38:02.628" endtime="20201228 20:38:04.642"></status>
+<msg timestamp="20201228 20:42:11.686" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201228 20:42:09.680" endtime="20201228 20:42:11.686"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
+</arguments>
+<msg timestamp="20201228 20:42:11.687" level="INFO">Executing JavaScript:
+window.scrollTo(0,-document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20201228 20:42:11.687" endtime="20201228 20:42:11.698"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20201228 20:42:13.706" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201228 20:42:11.701" endtime="20201228 20:42:13.706"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20201228 20:38:04.643" endtime="20201228 20:38:08.438"></status>
+<status status="PASS" starttime="20201228 20:42:13.706" endtime="20201228 20:42:16.609"></status>
 </kw>
-<status status="PASS" starttime="20201228 20:37:49.334" endtime="20201228 20:38:08.438" critical="yes"></status>
+<status status="PASS" starttime="20201228 20:41:45.777" endtime="20201228 20:42:16.610" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20201228 20:37:48.932" endtime="20201228 20:38:08.440"></status>
+<status status="PASS" starttime="20201228 20:41:45.475" endtime="20201228 20:42:16.612"></status>
 </suite>
 <statistics>
 <total>
