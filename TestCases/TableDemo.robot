@@ -13,3 +13,7 @@ TableOperations
 
     ${data}=    get text    xpath://table[@name='BookTable']/tbody/tr[5]/td[1]
     log to console  ${data}
+
+    Table column should contain  xpath://table[@name='BookTable']   2   Author
+    Table row should contain    xpath://table[@name='BookTable']    4   Learn   JS
+
