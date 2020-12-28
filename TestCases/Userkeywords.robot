@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Resource  ../Resources/resources.robot
 
 *** Variables ***
 ${url}      https://www.facebook.com/
@@ -13,15 +14,8 @@ TC1
     input text  name:email   mercury
     input text  name:pass   mercury
 
-#    close browser
+    close browser
 
-*** Keywords ***
-launchBrowser
-    [Arguments]  ${appurl}  ${appbrowser}
-    open browser    ${appurl}  ${appbrowser}
-    maximize browser window
-    ${title}=   get title
-    [Return]    ${title}
 
 
 
