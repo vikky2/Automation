@@ -7,15 +7,16 @@ ${browser}  chrome
 
 *** Test Cases ***
 TC1
-    open browser    ${url}  ${browser}
-    maximize browser window
+    launchBrowser
     input text  name:email   mercury
     input text  name:pass   mercury
 
     close browser
 
 *** Keywords ***
-
+launchBrowser
+    open browser    ${url}  ${browser}
+    maximize browser window
 
 
 
